@@ -8,6 +8,6 @@ A tuned RandomForest classifier (best params = `{'max_depth': 5, 'min_samples_sp
 ![Loan Amount Distribution](images/loan_amount_distribution.png)
 ![Income Scatter](images/income_scatter.png)
 ![Income to Loan Ratio](images/income_to_loan_ratio.png)
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix.png) 
 
 
