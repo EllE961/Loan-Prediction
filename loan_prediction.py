@@ -12,8 +12,8 @@ test_df = pd.read_csv("data/test.csv")
 
 cat_cols = ["Gender", "Married", "Dependents", "Education", "Self_Employed", "Property_Area"]
 for col in cat_cols:
-    train_df[col].fillna("Unknown", inplace=True)
-    test_df[col].fillna("Unknown", inplace=True)
+    train_df[col] = train_df[col].fillna("Unknown")
+    test_df[col] = test_df[col].fillna("Unknown")
     le = LabelEncoder()
     train_df[col] = le.fit_transform(train_df[col])
     test_df[col] = le.transform(test_df[col])
